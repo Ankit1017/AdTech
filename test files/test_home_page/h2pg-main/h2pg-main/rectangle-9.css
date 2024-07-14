@@ -1,0 +1,11 @@
+.rectangle-div1 {
+  width: 100%;
+  position: relative;
+  border-radius: 86px;
+  background-color: #d9d9d9;
+  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+  border: 1px solid #000;
+  box-sizing: border-box;
+  height: 107px;
+  display: none;
+}

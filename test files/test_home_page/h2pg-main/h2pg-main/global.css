@@ -1,0 +1,52 @@
+body {
+  margin: 0;
+  line-height: normal;
+}
+
+:root {
+  /* fonts */
+  --font-mali: Mali;
+  --font-lao-muang-don: "Lao Muang Don";
+  --font-kavoon: Kavoon;
+  --font-klee-one: "Klee One";
+  --font-lalezar: Lalezar;
+  --font-hind-guntur: "Hind Guntur";
+  --font-kadwa: Kadwa;
+  --font-ibm-plex-sans-devanagari: "IBM Plex Sans Devanagari";
+  --font-inder: Inder;
+  --font-jua: Jua;
+  --font-lilita-one: "Lilita One";
+  --font-lobster: Lobster;
+  --font-laila: Laila;
+  --font-kodchasan: Kodchasan;
+  --font-kiwi-maru: "Kiwi Maru";
+
+  /* font sizes */
+  --font-size-16xl: 35px;
+  --font-size-8xl: 27px;
+  --font-size-6xl: 25px;
+  --font-size-81xl: 100px;
+  --font-size-12xl: 31px;
+  --font-size-26xl: 45px;
+  --font-size-109xl: 128px;
+  --font-size-46xl: 65px;
+  --font-size-11xl: 30px;
+
+  /* Colors */
+  --color-gray-100: #120000;
+  --color-gray-200: #060505;
+  --color-mediumvioletred: #ec00b8;
+  --color-fuchsia: #ff00c7;
+  --color-white: #fff;
+  --color-darkgray: #c4aeae;
+
+  /* Paddings */
+  --padding-21xl: 40px;
+
+  /* Border radiuses */
+  --br-45xl: 64px;
+  --br-82xl: 101px;
+  --br-75xl: 94px;
+  --br-86xl: 105px;
+  --br-6xs: 7px;
+}

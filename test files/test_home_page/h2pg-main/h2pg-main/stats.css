@@ -1,0 +1,68 @@
+.stats-child {
+  position: absolute;
+  top: 143px;
+  left: 31px;
+  border-radius: var(--br-6xs);
+  width: 58.9px;
+  height: 79.5px;
+  object-fit: contain;
+}
+.pepsi2 {
+  position: absolute;
+  top: 26px;
+  left: 634px;
+  font-size: var(--font-size-46xl);
+  font-family: var(--font-kavoon);
+}
+.name-location-time {
+  position: absolute;
+  top: 187px;
+  left: 317px;
+  font-size: var(--font-size-16xl);
+  font-weight: 500;
+  font-family: var(--font-kiwi-maru);
+  white-space: pre-wrap;
+  display: inline-block;
+  width: 1023px;
+}
+.stats-item {
+  position: absolute;
+  top: 247px;
+  left: 1367px;
+  border-radius: 275px;
+  background-color: var(--color-mediumvioletred);
+  width: 20px;
+  height: 448px;
+}
+.pepsimeetv {
+  margin: 0;
+  font-family: inherit;
+  font-size: inherit;
+  padding-left: var(--padding-21xl);
+}
+.pepsimeetv-pitampura-31st-container {
+  position: absolute;
+  top: 294px;
+  left: 174px;
+}
+.pepsimeetv-pitampura-31st-container1 {
+  position: absolute;
+  top: 389px;
+  left: 174px;
+}
+.pepsimeetv-pitampura-31st-container2 {
+  position: absolute;
+  top: 492px;
+  left: 174px;
+}
+.stats1 {
+  width: 100%;
+  position: relative;
+  background-color: var(--color-gray-200);
+  height: 1024px;
+  overflow: hidden;
+  text-align: left;
+  font-size: var(--font-size-11xl);
+  color: var(--color-white);
+  font-family: var(--font-kodchasan);
+}

@@ -1,0 +1,125 @@
+.home4 {
+  margin: 0;
+}
+.home3 {
+  position: absolute;
+  top: 40px;
+  left: 128px;
+  display: inline-block;
+  width: 80px;
+  height: 36px;
+}
+.about-us1 {
+  position: absolute;
+  top: 42px;
+  left: 396px;
+}
+.contact-us1,
+.login-child,
+.sign-in1 {
+  position: absolute;
+  top: 42px;
+  left: 699px;
+}
+.login-child,
+.sign-in1 {
+  left: 1026px;
+}
+.login-child {
+  top: 26px;
+  left: 1200px;
+  border-radius: var(--br-45xl);
+  background-color: var(--color-fuchsia);
+  width: 141.4px;
+  height: 64px;
+  transform: rotate(-0.17deg);
+  transform-origin: 0 0;
+}
+.hatched1,
+.join1 {
+  position: absolute;
+  top: 42px;
+  left: 1239px;
+  color: var(--color-gray-200);
+}
+.hatched1 {
+  top: 224px;
+  left: 507px;
+  font-size: var(--font-size-81xl);
+  font-family: var(--font-lalezar);
+  color: var(--color-mediumvioletred);
+  display: inline-block;
+  width: 483px;
+}
+.login-inner,
+.login-item {
+  position: absolute;
+  top: 340px;
+  left: 385px;
+  background-color: var(--color-gray-100);
+  width: 662px;
+  height: 517px;
+}
+.login-inner {
+  top: 671.4px;
+  left: 629px;
+  border-radius: var(--br-45xl);
+  background-color: var(--color-fuchsia);
+  width: 141.4px;
+  height: 64px;
+  transform: rotate(-0.17deg);
+  transform-origin: 0 0;
+}
+.log-in {
+  position: absolute;
+  top: 686px;
+  left: 669px;
+  color: var(--color-gray-200);
+}
+.login-child1,
+.rectangle-div {
+  position: absolute;
+  top: 407px;
+  left: 547px;
+  border-radius: var(--br-82xl);
+  background-color: var(--color-white);
+  width: 338px;
+  height: 71px;
+}
+.login-child1 {
+  top: 528px;
+}
+.password,
+.username {
+  position: absolute;
+  top: 542px;
+  left: 572px;
+  font-size: var(--font-size-6xl);
+  font-family: var(--font-klee-one);
+  color: var(--color-darkgray);
+  display: inline-block;
+  width: 263px;
+  height: 43px;
+}
+.username {
+  top: 421px;
+}
+.frame-div {
+  position: absolute;
+  top: 414px;
+  left: 1255px;
+  width: 100px;
+  height: 100px;
+  overflow: hidden;
+}
+.login {
+  width: 100%;
+  position: relative;
+  background-color: var(--color-gray-200);
+  height: 1024px;
+  overflow: hidden;
+  text-align: left;
+  font-size: var(--font-size-8xl);
+  color: var(--color-white);
+  font-family: var(--font-kavoon);
+}

@@ -1,0 +1,74 @@
+.home2 {
+  margin: 0;
+}
+.home1 {
+  position: absolute;
+  top: 42.4px;
+  left: 113px;
+  color: var(--color-fuchsia);
+  display: inline-block;
+  width: 80px;
+  height: 36px;
+}
+.about-us {
+  position: absolute;
+  top: 44.4px;
+  left: 381px;
+}
+.contact-us,
+.home-child,
+.sign-in {
+  position: absolute;
+  top: 44.4px;
+  left: 684px;
+}
+.home-child,
+.sign-in {
+  left: 1011px;
+}
+.home-child {
+  top: 28.4px;
+  left: 1185px;
+  border-radius: var(--br-45xl);
+  background-color: var(--color-fuchsia);
+  width: 141.4px;
+  height: 64px;
+  transform: rotate(-0.17deg);
+  transform-origin: 0 0;
+}
+.hatched,
+.join {
+  position: absolute;
+  top: 44.4px;
+  left: 1224px;
+  color: var(--color-gray-200);
+}
+.hatched {
+  top: 274px;
+  left: 237px;
+  font-size: 110px;
+  font-family: var(--font-lao-muang-don);
+  color: var(--color-mediumvioletred);
+  display: inline-block;
+  width: 633px;
+}
+.born-with-a {
+  position: absolute;
+  top: 412px;
+  left: 640px;
+  font-size: var(--font-size-16xl);
+  font-family: var(--font-mali);
+  color: #3f0;
+}
+.home {
+  width: 100%;
+  position: relative;
+  background-color: var(--color-gray-100);
+  height: 100vh;
+  overflow: hidden;
+  cursor: pointer;
+  text-align: left;
+  font-size: var(--font-size-8xl);
+  color: var(--color-white);
+  font-family: var(--font-kavoon);
+}

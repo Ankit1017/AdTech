@@ -1,0 +1,106 @@
+.pepsi {
+  position: absolute;
+  top: 19px;
+  left: 641px;
+  font-size: var(--font-size-46xl);
+  font-family: var(--font-kavoon);
+}
+.portal-home-child {
+  position: absolute;
+  top: 117px;
+  left: -0.9px;
+  border-radius: var(--br-6xs);
+  width: 58.9px;
+  height: 79.5px;
+  object-fit: contain;
+}
+.portal-home-item {
+  position: absolute;
+  top: 83px;
+  left: 1302px;
+  border-radius: 50%;
+  background-color: var(--color-mediumvioletred);
+  width: 67px;
+  height: 72px;
+}
+.div {
+  position: absolute;
+  top: 36px;
+  left: 1232px;
+  font-size: var(--font-size-109xl);
+  font-family: var(--font-lobster);
+  color: var(--color-gray-200);
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 208px;
+  height: 163px;
+}
+.portal-home-inner {
+  position: absolute;
+  top: 876px;
+  left: 1117px;
+  border-radius: var(--br-86xl);
+  background-color: var(--color-mediumvioletred);
+  width: 257px;
+  height: 91px;
+}
+.div1 {
+  position: absolute;
+  top: 897px;
+  left: 1167px;
+  font-size: var(--font-size-26xl);
+  font-family: var(--font-lilita-one);
+  text-align: center;
+}
+.noise-texture,
+.noise-texture1 {
+  position: absolute;
+  top: 159px;
+  left: 130px;
+  border-radius: var(--br-75xl);
+  width: 304px;
+  height: 370px;
+  object-fit: cover;
+  opacity: 0.28;
+  mix-blend-mode: hard-light;
+}
+.noise-texture1 {
+  left: 568px;
+  opacity: 0.2;
+}
+.pepsiflavo,
+.pepsimeetu {
+  position: absolute;
+  top: 459px;
+  left: 186px;
+}
+.pepsimeetu {
+  left: 633px;
+}
+.screenshot-2023-06-12-151909-1,
+.screenshot-2023-06-12-151909-2 {
+  position: absolute;
+  top: 196px;
+  left: 160px;
+  border-radius: var(--br-75xl);
+  width: 225px;
+  height: 223px;
+  object-fit: cover;
+}
+.screenshot-2023-06-12-151909-2 {
+  left: 616px;
+}
+.portal-home {
+  width: 100%;
+  position: relative;
+  background-color: var(--color-gray-200);
+  height: 1024px;
+  overflow: hidden;
+  cursor: pointer;
+  text-align: left;
+  font-size: var(--font-size-12xl);
+  color: var(--color-white);
+  font-family: var(--font-jua);
+}
