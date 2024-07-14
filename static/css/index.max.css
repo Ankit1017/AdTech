@@ -1,0 +1,52 @@
+:root{
+	--bg: #222831;
+	--bg1:#393E46;
+	--bg2:#00ADB5;
+	--bg3:#EEEEEE;
+}
+
+#des{
+	font-family: Cambria Math;
+	color: white;
+	font-size: 23px;
+	width: 80%;
+	text-align: center;
+	align-self: center;
+}
+#hed{
+	font-size: 32px;
+	color: white;
+	font-family: Bahnschrift;
+	font-weight: bolder;
+	text-align: center;
+}
+body{
+	background: var(--bg);
+}
+#mn{
+	margin: 1vh;
+	border-radius: 9px;
+	width: 300px;
+	float: left;
+}
+#sgn{
+	display: flex;
+	justify-content: center;
+	background: white;
+	padding: 1vh;
+	width: 70vw;
+	text-align: center;
+	border-radius: 8px;
+	margin: 1vh;
+}
+.sgn-btn{
+	width: 30vw;
+	margin: 1vh;
+	padding: 1vh;
+	background: var(--bg);
+	border: white;
+	border-radius: 7px;
+	font-size: 22px;
+	font-family: Cambria Math;
+	color: white;
+}

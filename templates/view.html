@@ -1,0 +1,975 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sidebar Menu</title>
+  <link href='https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css' rel='stylesheet'>
+  <link
+	rel="stylesheet"
+	href="https://fonts.googleapis.com/css2?family=Kavoon:wght@400&display=swap"
+  />
+  <link
+	rel="stylesheet"
+	href="https://fonts.googleapis.com/css2?family=Lao Muang Don:wght@400&display=swap"
+  />
+  <link
+	rel="stylesheet"
+	href="https://fonts.googleapis.com/css2?family=Mali:wght@400&display=swap"
+  />
+  <link
+	rel="stylesheet"
+	href="https://fonts.googleapis.com/css2?family=Lalezar:wght@400&display=swap"
+  />
+  <link
+	rel="stylesheet"
+	href="https://fonts.googleapis.com/css2?family=Klee One:wght@400&display=swap"
+  />
+  <link
+	rel="stylesheet"
+	href="https://fonts.googleapis.com/css2?family=Kadwa:wght@400&display=swap"
+  />
+  <link
+	rel="stylesheet"
+	href="https://fonts.googleapis.com/css2?family=Hind Guntur:wght@400&display=swap"
+  />
+  <link
+	rel="stylesheet"
+	href="https://fonts.googleapis.com/css2?family=Inder:wght@400&display=swap"
+  />
+  <link
+	rel="stylesheet"
+	href="https://fonts.googleapis.com/css2?family=IBM Plex Sans Devanagari:wght@400&display=swap"
+  />
+  <link
+	rel="stylesheet"
+	href="https://fonts.googleapis.com/css2?family=Lobster:wght@400&display=swap"
+  />
+  <link
+	rel="stylesheet"
+	href="https://fonts.googleapis.com/css2?family=Lilita One:wght@400&display=swap"
+  />
+  <link
+	rel="stylesheet"
+	href="https://fonts.googleapis.com/css2?family=Jua:wght@400&display=swap"
+  />
+  <link
+	rel="stylesheet"
+	href="https://fonts.googleapis.com/css2?family=Laila:wght@400&display=swap"
+  />
+  <link
+	rel="stylesheet"
+	href="https://fonts.googleapis.com/css2?family=Kiwi Maru:wght@500&display=swap"
+  />
+  <link
+	rel="stylesheet"
+	href="https://fonts.googleapis.com/css2?family=Kodchasan:wght@400&display=swap"
+  />
+  <script src="https://checkout.razorpay.com/v1/checkout.js"></script>
+</head>
+<style>
+  @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap");
+
+*,
+*::before,
+*::after {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+:root {
+  /* fonts */
+  --font-mali: Mali;
+  --font-lao-muang-don: "Lao Muang Don";
+  --font-kavoon: Kavoon;
+  --font-klee-one: "Klee One";
+  --font-lalezar: Lalezar;
+  --font-hind-guntur: "Hind Guntur";
+  --font-kadwa: Kadwa;
+  --font-ibm-plex-sans-devanagari: "IBM Plex Sans Devanagari";
+  --font-inder: Inder;
+  --font-jua: Jua;
+  --font-lilita-one: "Lilita One";
+  --font-lobster: Lobster;
+  --font-laila: Laila;
+  --font-kodchasan: Kodchasan;
+  --font-kiwi-maru: "Kiwi Maru";
+
+  /* font sizes */
+  --font-size-16xl: 35px;
+  --font-size-8xl: 27px;
+  --font-size-6xl: 25px;
+  --font-size-81xl: 100px;
+  --font-size-12xl: 31px;
+  --font-size-26xl: 45px;
+  --font-size-109xl: 128px;
+  --font-size-46xl: 65px;
+  --font-size-11xl: 30px;
+
+  /* Colors */
+  --color-gray-100: #120000;
+  --color-gray-200: #060505;
+  --color-mediumvioletred: #ec00b8;
+  --color-fuchsia: #ff00c7;
+  --color-white: #fff;
+  --color-darkgray: #c4aeae;
+  --main-color: #000;
+  --main-color-dark: #ff00c7;
+  --main-color-light: #ec00b8;
+  --text-color: #cfcde7;
+
+  /* Paddings */
+  --padding-21xl: 40px;
+
+  /* Border radiuses */
+  --br-45xl: 64px;
+  --br-82xl: 101px;
+  --br-75xl: 94px;
+  --br-86xl: 105px;
+  --br-6xs: 7px;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  overflow-x: hidden;
+  background-color: #000;
+  min-height: 100vh;
+  display: flex;
+  position: relative;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+}
+
+nav {
+  position: sticky;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  background-color: var(--main-color);
+  width: 16rem;
+  padding: 1.8rem 0.85rem;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  transition: width 0.5s ease-in-out;
+}
+
+nav::before {
+  content: "";
+  position: absolute;
+  width: 2rem;
+  height: 100%;
+  top: 0;
+  left: 100%;
+}
+
+main {
+  flex: 1;
+  padding: 2rem;
+  color: #1f2027;
+  display: flex;
+  flex-direction: column;
+}
+
+main h1 {
+  margin-bottom: 1rem;
+}
+
+main .copyright {
+  margin-top: auto;
+  font-size: 0.9rem;
+}
+
+main .copyright span {
+  color: var(--main-color);
+  font-weight: 500;
+  cursor: pointer;
+}
+
+.sidebar-top {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.sidebar-top .logo {
+  width: 2.1rem;
+  margin: 0 0.8rem;
+}
+
+.sidebar-top h3 {
+  padding-left: 0.5rem;
+  font-weight: 600;
+  font-size: 1.15rem;
+}
+
+.shrink-btn {
+  position: absolute;
+  top: 50%;
+  height: 27px;
+  padding: 0 0.3rem;
+  background-color: var(--main-color-dark);
+  border-radius: 6px;
+  cursor: pointer;
+  box-shadow: 0 3px 10px -3px rgba(70, 46, 118, 0.3);
+  right: -2.65rem;
+  transform: translateY(-50%) translateX(-8px);
+  opacity: 0;
+  pointer-events: none;
+  transition: 0.3s;
+}
+
+.shrink-btn i {
+  line-height: 27px;
+  transition: 0.3s;
+}
+
+.shrink-btn:hover {
+  background-color: var(--main-color-light);
+}
+
+nav:hover .shrink-btn,
+.shrink-btn.hovered {
+  transform: translateY(-50%) translateX(0px);
+  opacity: 1;
+  pointer-events: all;
+}
+
+.search {
+  min-height: 2.7rem;
+  /* background-color: var(--main-color-light); */
+  margin: 2rem 0.5rem 1.7rem;
+  display: grid;
+  grid-template-columns: 2.7rem 1fr;
+  align-items: center;
+  text-align: center;
+  border-radius: 50px;
+  cursor: pointer;
+}
+
+.search input {
+  height: 100%;
+  border: none;
+  background: none;
+  outline: none;
+  color: #fff;
+  caret-color: #fff;
+  font-family: inherit;
+}
+
+.search input::placeholder {
+  color: var(--text-color);
+}
+
+.sidebar-links ul {
+  position: relative;
+}
+
+.sidebar-links li {
+  position: relative;
+  padding: 2.5px 0;
+}
+
+.sidebar-links a {
+  color: var(--text-color);
+  font-weight: 400;
+  font-size: 0.9rem;
+  display: flex;
+  align-items: center;
+  height: 53px;
+}
+
+.icon {
+  font-size: 1.3rem;
+  text-align: center;
+  min-width: 3.7rem;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr;
+}
+
+.icon i {
+  grid-column: 1 / 2;
+  grid-row: 1 / 2;
+  transition: 0.3s;
+}
+
+.icon i:last-child {
+  opacity: 0;
+  color: #fff;
+}
+
+.sidebar-links a.active,
+.sidebar-links a:hover {
+  color: #fff;
+}
+
+.sidebar-links a .link {
+  transition: opacity 0.3s 0.2s, color 0.3s;
+}
+
+.sidebar-links a.active i:first-child {
+  opacity: 0;
+}
+
+.sidebar-links a.active i:last-child {
+  opacity: 1;
+}
+
+.active-tab {
+  width: 100%;
+  height: 53px;
+  background-color: var(--main-color-dark);
+  border-radius: 10px;
+  position: absolute;
+  top: 60.5px;
+  left: 0;
+  transition: top 0.01s;
+}
+
+.sidebar-links h4 {
+  position: relative;
+  font-size: 0.8rem;
+  text-transform: uppercase;
+  font-weight: 600;
+  padding: 0 0.8rem;
+  color: var(--text-color);
+  letter-spacing: 0.5px;
+  height: 45px;
+  line-height: 45px;
+  transition: opacity 0.3s 0.2s, height 0.5s 0s;
+}
+
+.sidebar-footer {
+  position: relative;
+  margin-top: 23vh;
+}
+
+.account {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.3rem;
+  color: var(--text-color);
+  height: 53px;
+  width: 3.7rem;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.3s 0s, color 0.3s 0s;
+}
+
+.account:hover {
+  color: #fff;
+}
+
+.admin-user {
+  display: flex;
+  align-items: center;
+}
+
+.admin-profile {
+  white-space: nowrap;
+  max-width: 100%;
+  transition: opacity 0.3s 0.2s, max-width 0.7s 0s ease-in-out;
+  display: flex;
+  align-items: center;
+  flex: 1;
+  overflow: hidden;
+}
+
+.admin-user img {
+  width: 2.9rem;
+  border-radius: 50%;
+  margin: 0 0.4rem;
+}
+
+.admin-info {
+  padding-left: 0.3rem;
+}
+
+.admin-info h3 {
+  font-weight: 500;
+  font-size: 1rem;
+  line-height: 1;
+}
+
+.admin-info h5 {
+  font-weight: 400;
+  font-size: 0.75rem;
+  color: var(--text-color);
+  margin-top: 0.3rem;
+  line-height: 1;
+}
+
+.log-out {
+  display: flex;
+  height: 40px;
+  min-width: 2.4rem;
+  background-color: var(--main-color-dark);
+  color: var(--text-color);
+  align-items: center;
+  justify-content: center;
+  font-size: 1.15rem;
+  border-radius: 10px;
+  margin: 0 0.65rem;
+  transition: color 0.3s;
+}
+
+.log-out:hover {
+  color: #fff;
+}
+
+.tooltip {
+  background-color: var(--main-color);
+  position: absolute;
+  right: -1.2rem;
+  top: 0;
+  transform: translateX(100%) translateY(-50%);
+  padding: 0 0.8rem;
+  font-size: 0.85rem;
+  display: none;
+  grid-template-rows: 1fr;
+  grid-template-columns: 1fr;
+  height: 30px;
+  align-items: center;
+  border-radius: 7px;
+  box-shadow: 0 3px 10px -3px rgba(70, 46, 118, 0.3);
+  opacity: 0;
+  pointer-events: none;
+  transition: all 0.3s;
+  text-align: center;
+  white-space: nowrap;
+}
+
+.tooltip span {
+  grid-column: 1 / 2;
+  grid-row: 1 / 2;
+  opacity: 0;
+  transition: 0.3s;
+}
+
+.tooltip span.show {
+  opacity: 1;
+}
+
+.tooltip-element:hover ~ .tooltip {
+  opacity: 1;
+  pointer-events: all;
+}
+
+/* When the menu shrinks */
+
+.hide {
+  transition: opacity 0.3s 0.2s;
+}
+
+body.shrink nav {
+  width: 5.4rem;
+}
+
+body.shrink .hide {
+  opacity: 0;
+  pointer-events: none;
+  transition-delay: 0s;
+}
+
+body.shrink .shrink-btn i {
+  transform: rotate(-180deg);
+}
+
+body.shrink .sidebar-links h4 {
+  height: 10px;
+}
+
+body.shrink .account {
+  opacity: 1;
+  pointer-events: all;
+  transition: opacity 0.3s 0.3s, color 0.3s 0s;
+}
+
+body.shrink .admin-profile {
+  max-width: 0;
+  transition: opacity 0.3s 0s, max-width 0.7s 0s ease-in-out;
+}
+
+body.shrink .tooltip {
+  display: grid;
+}
+
+
+.rt{
+  justify-content: center;
+  text-align: center;
+  display: flex;
+  color: #fff;
+  text-decoration: none;
+  font-size: var(--font-size-26xl);
+  font-family: var(--font-kavoon);
+}
+.lc{
+  border-radius: 50%;
+  background-color: var(--main-color-dark);
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  float: right;
+}
+.dp{
+margin: 1px;
+padding: 3px;
+font-size: var(--font-size-46xl);
+font-family: var(--font-lobster);
+color: var(--color-gray-200);
+line-height: 35px;
+}
+.fc{
+
+  position: fixed;
+  bottom: 7vh;
+  right: 3vw;
+
+  padding: 20px;
+}
+.dropdown {
+	position: absolute;
+	top: 10px;
+	right: 20px;
+	display: inline-block;
+  }
+  
+  .dropbtn {
+	border-radius: 50%;
+	width: 2.5rem;
+	height: 2.5rem;
+	background-color: var(--bg1);
+	padding: 1px 1px;
+	justify-content: center;
+	align-items: center;
+	display: flex;
+	cursor: pointer;
+  }
+  
+  /* Style the dropdown content (hidden by default) */
+  .dropdown-content {
+	display: none;
+	position: Fixed;
+	font-family: 'Noto Serif', serif;
+  top: 55px;
+	right:5px;
+	min-width: 10vw;
+	box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+	z-index: 1;
+	border-radius: 5px;
+	
+  }
+  .dropdown-content a {
+	color: #fff;
+	text-decoration: none;
+	display: block;
+  }
+  
+  /* Change color of links on hover */
+  .dropdown-content a:hover {
+	background-color: #ddd;
+  }
+  
+  /* Show the dropdown menu on hover */
+  .dropdown:hover .dropdown-content {
+	display: flex;
+  }
+  .upload-form {
+    display: inline-block;
+    margin-right: 10px; /* Adjust the space between form and button */
+}
+
+  .block-btn{
+    color: #fff;
+    padding: 10px;
+    background-color: var(--main-color-dark);
+    border-radius: 6px;
+    cursor: pointer;
+    box-shadow: 0 3px 10px -3px rgba(70, 46, 118, 0.3);
+  }
+
+  #bd{
+    background: var(--main-color);
+    width: 84vw;
+    float: right;
+    text-align: center;
+    align-items: center;
+    height: 67vh;
+    overflow-y: scroll; 
+    scroll-behavior: smooth;
+    scrollbar-width: none;
+    
+  }
+  .block{
+    width: 14vw;
+    height: 14vw;
+    border: solid;
+    border-radius: 8px;
+    background-image: url('/static/avatars/noise.png');
+    background-position: center;
+    margin: 3vh;
+    padding: 1vh;
+    float: left;
+    display: flex;
+  }
+.fft{
+  display: inline-block;
+}
+  .background-image {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+.bt{
+  display: flex;
+}
+
+
+
+  .block-name{
+    position: relative;
+    margin-top: 10px;
+    font-size: 14px;
+    font-weight: 400;
+    font-family: Cambria Math;
+    color: var(--text-color);
+  }
+
+  .balance-container {
+    position: absolute;
+    display: inline-block;
+    bottom: 70px;
+    right: 60px;
+  }
+  
+  .balance {
+    border-radius: var(--br-86xl);
+    background-color: var(--main-color-dark);
+    font-size: var(--font-size-12xl);
+    color: var(--color-white);
+    font-family: var(--font-jua);
+    padding: 10px;
+    cursor: pointer;
+  }
+  
+  .dropup-content {
+    display: none;
+    position: absolute;
+    margin-top: 10px;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+  
+  .dropup-content input[type="number"] {
+    width: 100px;
+    padding: 5px;
+    margin: 5px;
+    border-radius: var(--br-86xl);
+    color: var(--main-color);
+  }
+  
+  .dropup-content button {
+    padding: 5px 10px;
+    margin: 5px;
+    background-color: var(--main-color-dark);
+    border-radius: var(--br-86xl);
+    color: var(--color-white);
+    font-family: var(--font-jua);
+    border: none;
+    cursor: pointer;
+  }
+  
+  .dropup-content button:hover {
+    background-color: var(--main-color-light);
+  }
+  
+  .balance:hover .dropup-content {
+    display: block;
+  }
+  .ft{
+    color: #fff;
+    font-size: 40px;
+    margin-left: 10px;
+  }
+  .bd1{
+    font-family: "Open Sans", sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #f4f4f4;
+    color: white;
+}
+
+.table-container {
+    width: 80%;
+    overflow: auto;
+    background-color: #2C394B;
+    padding: 20px;
+}
+
+.video-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+.video-table th, .video-table td {
+    padding: 8px;
+    text-align: left;
+    padding: 10px 30px;
+}
+
+.video-table th {
+    color: white;
+    padding: 10px;
+}
+.video-table thead tr {
+    border-bottom: 1px solid #334756;
+}
+.video-table tbody tr {
+    border-bottom: 1px solid #334756;
+}
+
+/* Hover effect for video table rows */
+.video-table tbody tr:hover {
+    background-color: #274250;
+}
+</style>
+<body>
+  <nav>
+    <div class="sidebar-top">
+      <span class="shrink-btn">
+        <i class='bx bx-chevron-left'></i>
+      </span>
+      <img src="/static/avatars/logo.png" class="logo" alt="">
+      <h3 class="hide">Hatched</h3>
+    </div>
+
+    <div class="search">
+    </div>
+
+    <div class="sidebar-links">
+      <ul>
+        <div class="active-tab"></div>
+        <li class="tooltip-element" data-tooltip="0">
+          <a href="/dashboard/{{cat}}/{{username}}" data-active="0">
+            <div class="icon">
+              <i class='bx bx-tachometer'></i>
+              <i class='bx bxs-tachometer'></i>
+            </div>
+            <span class="link hide">Dashboard</span>
+          </a>
+        </li>
+        <li class="tooltip-element" data-tooltip="1">
+          <a href="/view/{{cat}}/{{username}}" class="active" data-active="1">
+            <div class="icon">
+              <i class='bx bx-message-square-detail'></i>
+              <i class='bx bxs-message-square-detail'></i>
+            </div>
+            <span class="link hide">Logs</span>
+          </a>
+        </li>
+        <li class="tooltip-element" data-tooltip="2">
+          <a href="/stat/{{cat}}/{{username}}" data-active="2">
+            <div class="icon">
+              <i class='bx bx-bar-chart-square'></i>
+              <i class='bx bxs-bar-chart-square'></i>
+            </div>
+            <span class="link hide">Analytics</span>
+          </a>
+        </li>
+        <li class="tooltip-element" data-tooltip="3">
+          <a href="#" data-active="3">
+            <div class="icon">
+              <i class='bx bx-help-circle'></i>
+              <i class='bx bxs-help-circle'></i>
+            </div>
+            <span class="link hide">Help</span>
+          </a>
+        </li>
+        <div class="tooltip">
+          <span >Dashboard</span>
+          <span class="show">Logs</span>
+          <span>Analytics</span>
+          <span>Help</span>
+        </div>
+      </ul>
+
+      
+
+    <div class="sidebar-footer">
+      <a href="#" class="account tooltip-element" data-tooltip="0">
+        <i class='bx bx-user'></i>
+      </a>
+      <div class="admin-user tooltip-element" data-tooltip="1">
+        <div class="admin-profile hide">
+          <img src="/static/avatars/face-1.png" alt="">
+          <div class="admin-info">
+            <h3>{{username}}</h3>
+            <h5>{{cat}}</h5>
+          </div>
+        </div>
+        <a href="/logout" class="log-out">
+          <i class='bx bx-log-out'></i>
+        </a>
+      </div>
+      <div class="tooltip">
+        <span class="show">{{username}}</span>
+        <span>Logout</span>
+      </div>
+    </div>
+  </nav>
+
+
+  <main>
+    <section class="tpp">
+        <div class="rt">{{username}}</div>
+        <div class="dropdown">
+          <div id="dropdown-btn" class="lc"><div class="dp">+</div></div>
+                      <div id="dropdown-content" class="dropdown-content">
+                        <form method="POST" action="/upload/{{cat}}/{{username}}/file" enctype="multipart/form-data" class="upload-form">
+                          <div class="block-btn">
+                              <label>Select ad
+                                <input type="file" name="files[]" multiple style="display:none;">
+                            </label>
+                          </div>
+                      </form>
+                      <button onclick="frm_s()" class="block-btn">Upload</button>
+                      </div>
+                  </div>
+                  <div id="bd">
+
+                    <center>
+                        <div class="bd1" id="bd">
+                            <div class="table-container">
+                                <table class="video-table" id="videoTable">
+                                    <thead>
+                                        <tr>
+                                            <th>Video Name</th>
+                                            <th>Show Location</th>
+                                            <th>Time Shown</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <!-- Data will be dynamically added here -->
+                                    </tbody>
+                                </table>
+                            </div>
+                        
+                        </div>
+                    </center>
+                  </div>
+
+    </section>
+  </main>
+
+  <script>
+    const shrink_btn = document.querySelector(".shrink-btn");
+const search = document.querySelector(".search");
+const sidebar_links = document.querySelectorAll(".sidebar-links a");
+const active_tab = document.querySelector(".active-tab");
+const shortcuts = document.querySelector(".sidebar-links h4");
+const tooltip_elements = document.querySelectorAll(".tooltip-element");
+
+let activeIndex;
+
+shrink_btn.addEventListener("click", () => {
+  document.body.classList.toggle("shrink");
+  setTimeout(moveActiveTab, 50);
+
+  shrink_btn.classList.add("hovered");
+
+  setTimeout(() => {
+    shrink_btn.classList.remove("hovered");
+  }, 75);
+});
+
+search.addEventListener("click", () => {
+  document.body.classList.remove("shrink");
+  search.lastElementChild.focus();
+});
+
+function moveActiveTab() {
+  let topPosition = activeIndex * 58 + 2.5;
+
+  if (activeIndex > 3) {
+    topPosition += shortcuts.clientHeight;
+  }
+
+  active_tab.style.top = `${topPosition}px`;
+}
+
+function changeLink() {
+  sidebar_links.forEach((sideLink) => sideLink.classList.remove("active"));
+  this.classList.add("active");
+
+  activeIndex = this.dataset.active;
+
+  moveActiveTab();
+}
+
+sidebar_links.forEach((link) => link.addEventListener("click", changeLink));
+
+function showTooltip() {
+  let tooltip = this.parentNode.lastElementChild;
+  let spans = tooltip.children;
+  let tooltipIndex = this.dataset.tooltip;
+
+  Array.from(spans).forEach((sp) => sp.classList.remove("show"));
+  spans[tooltipIndex].classList.add("show");
+
+  tooltip.style.top = `${(100 / (spans.length * 2)) * (tooltipIndex * 2 + 1)}%`;
+}
+
+tooltip_elements.forEach((elem) => {
+  elem.addEventListener("mouseover", showTooltip);
+});
+
+document.addEventListener("DOMContentLoaded", function() {
+    var videoData = JSON.parse('{{log|tojson}}');
+    
+    function populateTable() {
+        var tableBody = document.querySelector("#videoTable tbody");
+
+        videoData.forEach(function(video) {
+            var row = tableBody.insertRow();
+            var cell1 = row.insertCell(0);
+            var cell2 = row.insertCell(1);
+            var cell3 = row.insertCell(2);
+
+            cell1.textContent = video.name;
+            cell2.textContent = video.location;
+            cell3.textContent = video.timeShown;
+        });
+    }
+
+    // Call the function to populate the table on page load
+    populateTable();
+});
+function frm_s() {
+  if (document.getElementsByTagName('input')[0].value  == "") {
+    alert("Select your file(s)");
+  } else {
+    document.getElementsByTagName("form")[0].submit();
+  }
+}
+  </script>
+</body>
+
+</html>
