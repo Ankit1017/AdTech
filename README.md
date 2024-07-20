@@ -1,4 +1,35 @@
-# AdTech 
+# AdTech | AdTrend Pro
+
+AdTech is an intuitive ad management software designed to streamline the process of adding, deleting, and updating advertisements. The platform features comprehensive log maintenance and real-time performance analytics, leveraging modern technologies to maximize engagement and ROI.
+
+## Overview
+
+AdTech provides a user-friendly portal for managing ads, with capabilities for detailed logging and dynamic file utilization using DynamoDB and S3. The software also incorporates a multi-server model to intelligently display ads based on historical trends and upcoming events.
+
+## Key Features
+
+- **Ad Management Portal**: Intuitive interface for adding, deleting, and updating advertisements.
+- **Detailed Log Maintenance**: Track all ad-related activities with comprehensive logging.
+- **Real-Time Performance Analytics**: Utilize DynamoDB and S3 for storing and analyzing ad performance data.
+- **Dynamic Ad Display**: Multi-server model for displaying ads based on previous trends and future events, optimizing engagement and ROI.
+
+## Technology Stack
+
+AdTech is built using a combination of technologies to deliver a robust and scalable solution:
+
+- **HTML/CSS**: For the frontend design and layout.
+- **JavaScript**: For dynamic content and interactivity.
+- **Flask**: For the backend framework and API integration.
+- **Python**: For backend scripting and functionality.
+- **DynamoDB**: For scalable database solutions and real-time analytics.
+- **S3**: For dynamic file storage and management.
+
+## Installation
+
+1. Clone the repository:
+   ```sh
+   git clone https://github.com/Ankit1017/AdTech.git
+
 
 Portal Preview
 
